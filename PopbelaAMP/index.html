@@ -1,7 +1,7 @@
 <!doctype html>
 <html ⚡>
   <head>
-  	<script async custom-element="amp-story"
+    <script async custom-element="amp-story"
         src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <meta charset="utf-8">
     <title>AMP Test</title>
@@ -56,13 +56,13 @@
     </style>
   </head>
   <body>
-  	<amp-story standalone
-    title="AMP Test"
-    publisher="AMP tutorials"
+    <amp-story standalone
+    title="AMP Story Test"
+    publisher="RCH"
     publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
     poster-portrait-src="assets/cover.jpg">
    <amp-story-page id="cover">
-   	<amp-story-grid-layer template="fill">
+    <amp-story-grid-layer template="fill">
     <amp-img src="assets/cover.jpg"
         width="720" height="1280"
         layout="responsive">
@@ -70,17 +70,20 @@
   </amp-story-grid-layer>
   <amp-story-grid-layer template="vertical">
   <h1>Kitty</h1>
-  <p>Love your kitty~</p>
+  <p class="my-element"
+      animate-in="fly-in-left"
+      animate-in-delay="0.3s"
+      animate-in-duration="0.5s">Love your kitty~</p>
 </amp-story-grid-layer>
    </amp-story-page>
    <amp-story-page id="one">
-   	<amp-story-grid-layer template="fill">
-   	<amp-img src="assets/One.jpg" width="720" height="1280" layout="responsive">
-   	</amp-img>
+    <amp-story-grid-layer template="fill">
+    <amp-img src="assets/One.jpg" width="720" height="1280" layout="responsive">
+    </amp-img>
    </amp-story-grid-layer>
    <amp-story-grid-layer template="thirds">
-   	<h1 grid-area="upper-third">Page #1</h1>
-   	<p grid-area="lower-third">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+    <h1 grid-area="upper-third">Page #1</h1>
+    <p grid-area="lower-third">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
    </amp-story-grid-layer>
 </amp-story-page>
 <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
